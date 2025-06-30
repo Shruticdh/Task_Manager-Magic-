@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "2e19",
+      "username": "Shruti",
+      "password": "qwerty1234"
+    },
+    {
+      "id": "04b9",
+      "username": "Shruti",
+      "password": "qwerty1234"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "0c5e",
+      "title": "hello",
+      "description": "qwerty qwerty",
+      "completed": false,
+      "userId": "2e19"
+    }
+  ]
+}

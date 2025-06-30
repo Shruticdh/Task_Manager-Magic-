@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">Task List</div>
+  <div class="card-body">
+    <app-task-form (taskAdded)="loadTasks()" [taskToEdit]="taskToEdit"></app-task-form>
+    <ul class="list-group mt-3">
+      <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let task of tasks">
+        <div>
+          <input type="checkbox" [checked]="task.completed" (change)="toggleTask(task)">
+          <span [ngClass]="{'text-decoration-line-through': task.completed}">{{ task.title }}</span>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-primary mr-2" (click)="onEdit(task)">Edit</button>
+          <button class="btn btn-sm btn-danger" (click)="deleteTask(task.id!)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
